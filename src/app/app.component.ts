@@ -9,6 +9,9 @@ import * as tf from '@tensorflow/tfjs';
   templateUrl: './app.component.html',
   styleUrls: []
 })
+{ test: /\.css$/, 
+  loaders: ['to-string-loader', 'css-loader'] 
+}
 export class AppComponent implements OnInit {
 
   linearModel: tf.Sequential;
